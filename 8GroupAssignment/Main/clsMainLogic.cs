@@ -8,5 +8,26 @@ namespace _8GroupAssignment.Main
 {
     class clsMainLogic
     {
+        /// <summary>
+        /// SQL Declaration
+        /// </summary>
+        private clsMainSQL SQL;
+
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        public clsMainLogic()
+        {
+
+                SQL = new clsMainSQL();
+                
+            
+
+        }
+
+
+
+
+
     }
 }
