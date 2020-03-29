@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Group_Project_Assignment"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700.778" Width="1098.65">
+        Title="MainWindow" Height="700.778" Width="1098.65" Closed="wndSearchWindow_Closed">
     <Grid>
         <DataGrid x:Name="dtgrdInvoiceSearch" HorizontalAlignment="Left" Height="462" Margin="47,56,0,0" VerticalAlignment="Top" Width="693"/>
         <Button x:Name="btnSelect" Content="Select" HorizontalAlignment="Left" Margin="47,555,0,0" VerticalAlignment="Top" Width="200" Height="75" Click="btnSelect_Click" FontSize="24" FontWeight="Bold"/>

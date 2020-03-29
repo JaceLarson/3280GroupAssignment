@@ -113,7 +113,7 @@ namespace CS3280GroupProject.Main
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Group_Project_Assignment.wndSearch wndSearch = new Group_Project_Assignment.wndSearch();
+            Group_Project_Assignment.wndSearch wndSearch = new Group_Project_Assignment.wndSearch(this);
             wndSearch.Show();
         }
     }
