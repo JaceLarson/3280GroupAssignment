@@ -16,12 +16,12 @@
             <ColumnDefinition Width="383*"/>
         </Grid.ColumnDefinitions>
         <Menu VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.ColumnSpan="2">
-            <MenuItem Header="Invoice Search" />
+            <MenuItem Header="Invoice Search" Click="MenuItem_Click" />
             <MenuItem x:Name="ItemListMenu" Header="Item List" />
         </Menu>
         <StackPanel x:Name="InvoiceBtnStack" Style="{StaticResource StackPanelInactive}" Visibility="Visible">
             <Button x:Name="AddInvoiceBtn" Content="Add Invoice" Click="AddInvoiceBtn_Click" Height="Auto"/>
-            <Button x:Name="EditInvoiceBtn" Content="Edit Invoice" Click="EditInvoiceBtn_Click" Height="Auto" IsEnabled="False"/>
+            <Button x:Name="EditInvoiceBtn" Content="Edit Invoice" Click="EditInvoiceBtn_Click" Height="Auto"/>
             <Button x:Name="DeleteInvoiceBtn" Content="Delete Invoice" Height="Auto" IsEnabled="False"/>
         </StackPanel>
         <Grid x:Name="InvoiceDetailGrid" Grid.Column="1" HorizontalAlignment="Left" Height="199" Margin="22,25,0,0" VerticalAlignment="Top" Width="351" Visibility="Hidden">

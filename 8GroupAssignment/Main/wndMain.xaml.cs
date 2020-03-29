@@ -1,22 +1,8 @@
 ﻿using _8GroupAssignment.Main;
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
 namespace CS3280GroupProject.Main
 {
     /// <summary>
@@ -114,6 +100,21 @@ namespace CS3280GroupProject.Main
                     MethodInfo.GetCurrentMethod().Name, ex.Message);
             }
         }
+
+        /// <summary>
+        /// Search Window
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// 
         
+
+            ///HERE WE WILL SEND AN INVOICE OJBECT TO SEARCH WINDOW
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Group_Project_Assignment.wndSearch wndSearch = new Group_Project_Assignment.wndSearch();
+            wndSearch.Show();
+        }
     }
 }
