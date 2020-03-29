@@ -25,6 +25,9 @@ namespace CS3280GroupProject.Main
             {
                 InitializeComponent();
                 ML = new clsMainLogic();
+
+                ///Will need to create invoice object here to send as part of object to search window.
+                
             }
             catch (Exception ex)
             {
@@ -47,11 +50,11 @@ namespace CS3280GroupProject.Main
         {
             try
             {
-                //Make the NewInvoice and InvoiceDetail grids visible
+                //Make the other grids available
                 InvoiceDetailGrid.Visibility = Visibility.Visible;
                 NewInvoiceGrid.Visibility = Visibility.Visible;
 
-                //Retrieve the active StackPanel style and apply it to the button stack panel
+                //Make style active for Panel
                 Style st = (Style)this.FindResource("StackPanelActive");
 
                 InvoiceBtnStack.Style = st;
